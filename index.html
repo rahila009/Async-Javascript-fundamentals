@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // javascript is synchronous mean ek code exexxute hoga us k bad dusra code execute hoga
+   // its is singe threaded language yani ek hi thread pay sab kuch execute hoga
+     
+   // exucution context
+   //yani code juh hota hai one by one execute hota hai
+   //each operation is wait for the last one two complte before execution
+
+   //there are tow type of code that we can wirite
+   //blocking code yani poray program ka flow block kardeh ga
+   //jab bhi hum blocking code likte hai or bolte hai code pad kar awunga yani jitna us ko time lagay
+   //ga  ek miniute doh minute toh humara juh code hoga woh koi or kam nai kar payeh ga
+   // jab tak woh code read na ho
+   //non blocking code yani yeh kaam ko continue kar nay k leyh use hota hai
+    //yani koi bhi execution code ko block nai krata yhn pay
+    // read file async kya hoga jab tak mai file read kar k lata hn tab tak apna kaam karo
+    //jasy file read ho k agya hai toh mai bta dun  ga
+
+
+
+    // in simple word 
+   // sync  mai yeh hota hai ki apka file read hnay tak  koi kam nai hota 
+   //yani jab tak apka file read nai hoga tab tak koi code execute nai hoga
+
+   //async mai yeh hota ki jab tak humari file read hogee tab tak code bhi execute hoga or read hokay nhi ajyeh ga file
+
+
+
+
+  // key Points
+  //js egine made up of  two thing 
+  // meamory heap and call stack
+
+/// than humara pass web api hai juh ki browers mai milti hai
+//ab we api hogi toh dom ka aceess milay ga
+// or agar node ki enviroment  hai toh dom  ki aceess nai mile gee
+// q ki whn pay document oject model nai hai
+
+
+//or dusri cheez hoti hai task cue yeh task QUE juh hota hai woh poray javascript  ko fast or async baanata hai
+// phir promises hoti hai  than us ka alag que hota hai
+
+
+
+/// most importan thing
+
+//jab bhi program execute hota hai toh us ka call stack banta hai
+// or us k andar humara global execution context banta hai
+/// or ek ek kar k function load kyeh jata hai
+// jasy jasy function k execution khatam hojaty hai
+// than un function ko un load kyeh jata hai yani ek ek kar k bhar nikal jatay hai
+
+
+///jab hum async code likhtay hai toh hum  chahtay ki koi asa resourse ho ya koi asa mechnism ho
+// jis k andar jab hum kahay ki yeh wala kaam kar k mujhy baad mai yad dila deh na\
+//toh woh sara mecnism kar nay k leyh humaray pass web api hoti haijasy ki setimeout , setinteval, domapi,  fetch
+
+
+
+
+
+
+
+ // file read kar k awoo ya file mai sy data lay k awoo toh problem create hoti hai
+ // file juh hota hai woh program read nai file read kar nay k leyh context dena padta hai karnal ko
+ //phir karnal jata hai us file ko access karta hai juh bhi material chayeh read karta hai
+ // read kar nay k badh wapis sy execution diya jata hai program ko carnal sy
+ //yeh carnal juh hota hai wait nai karta pahlay kam hota hai us badh execution
+
+//  function juh hai  woh transfer  hoga  settime out mai settieme kya karta hai  function time out karta hai  1 ya 2 second mai apnay execute
+//  karna hai
+
+//than ek regiiter call back hota hai us k andar regiter hota hi kibyeh kam 2 secong k andar kar na hai duh second k badh
+ //toh is leyh regiter hota hai ki humaray jitnay bhi events hai un ko regiter karta hai
+
+
+ //tahn task que hoti hai yhn kya hota hai last sy enter hota or front sy nikala jata hai
+ //than stack mai juh last mai ayeh ga woh sab sy pehlay nikaly ga
+ //regiter call back kya karta  hai jab bhi kaam karna hoga  toh jaldi sy apnay call back add krta jayeh ga 
+ // task que k andar  woh butto click ka  event hosata hai, hosata hai humara settime out ho juh bhi ho regiter
+ //jaldi sy yeh say cheexay task que k andar dal deh ga
+
+
+
+ // ab taskque ka job hota hai ki yeh sab kuch handle karta hai yeh fata fat add karta hai say call backs ko
+ //call stack mai add karta hai
+
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Code Example</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS Code Example</title>
+</head>
+
+<body>
+    <h1>JS Code</h1>
+    <button id="start" onclick="startInterval()">Start</button>
+    <button id="stop" onclick="stopInterval()">Stop</button>
+
+    <script>
+        let setIntervalId;
+
+        const sayDate = function (str) {
+            console.log(str, Date.now());
+        };
+
+        const startInterval = function () {
+            setIntervalId = setInterval(sayDate, 1000, "hi");
+        };
+
+        const stopInterval = function () {
+            clearInterval(setIntervalId);
+        };
+    </script>
+</body>
+
+</html>
+
+    </script>
+</body>
+
+</html>
+

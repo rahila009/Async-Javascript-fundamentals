@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js project async</title>
+</head>
+
+<body>
+
+    <!-- 2 projects with Async JS -->
+    <h1>js code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    setTimeout(function () {
+        // console.log('rahila rahim')
+    }, 2000) //yeh ek method hai or yeh api bhi call karta hai or is mai yeh hota hai ki itni time lagay gee
+    // or us k badh kaam hoga
+
+
+    const  syrahila = function(){
+        console.log('rahila')
+    }
+
+    setTimeout( syrahila,2000)
+
+
+
+    // const changeText = document.querySelector('h1').innerHTML="best progrmaing language"
+    //  setTimeout(changeText, 2000)
+
+
+    const changeText = function () {
+        document.querySelector('h1').innerHTML = "this is best series"
+
+    }
+
+    // setTimeout(changeText, 2000)
+
+
+
+
+
+    const changeMe = setTimeout(changeText, 2000)
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearTimeout(changeMe)
+        console.log()
+    })
+
+
+
+
+</script>
+
+</html>
